@@ -2,12 +2,18 @@
   "name": "sunstone-site",
   "private": true,
   "scripts": {
+    "predev": "agility-next sync",
     "dev": "next dev",
+    "prebuild": "agility-next prebuild",
     "build": "next build",
+    "export": "next export",
+    "postbuild": "agility-next postbuild",
     "start": "next start",
-    "lint": "next lint"
+    "cms-pull": "NODE_ENV=development node agility/agility.sync.js sync",
+    "cms-clear": "NODE_ENV=development node agility/agility.sync.js clear"
   },
   "dependencies": {
+    "@agility/nextjs": "^0.4.1",
     "next": "12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2"
