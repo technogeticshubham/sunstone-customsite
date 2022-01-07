@@ -13,12 +13,19 @@
     "cms-clear": "NODE_ENV=development node agility/agility.sync.js clear"
   },
   "dependencies": {
-    "@agility/nextjs": "^0.4.1",
+    "fs-extra": "^10.0.0",
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-html-parser": "^2.0.2",
+    "react-icons": "^4.3.1",
+    "react-simple-image-slider": "^2.3.0",
+    "sass": "^1.46.0"
   },
   "devDependencies": {
+    "@agility/content-fetch": "^1.1.1",
+    "@agility/content-sync": "^1.0.4",
+    "@agility/nextjs": "^0.4.1",
     "@types/node": "17.0.8",
     "@types/react": "17.0.38",
     "eslint": "8.6.0",

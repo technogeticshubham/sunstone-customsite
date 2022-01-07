@@ -1,6 +1,7 @@
-import Layout from "components/common/Layout";
+import Layout from "../components/common/Layout";
 import { getAgilityPageProps, getAgilityPaths } from "@agility/nextjs/node";
-import { getModule } from "components/agility-pageModules";
+import { getModule } from "../components/agility-pageModules";
+// import SiteHeader from "../components/common/SiteHeader";
 
 // getStaticProps function fetches data for all of your Agility Pages and Next.js will pre-render these pages at build time
 export async function getStaticProps({
@@ -11,9 +12,9 @@ export async function getStaticProps({
   locales,
 }) {
   // place all global here
-  const globalComponents = {
-    header: "",
-  };
+  // const globalComponents = {
+  //   header: SiteHeader,
+  // };
 
   const agilityProps = await getAgilityPageProps({
     preview,
@@ -21,7 +22,7 @@ export async function getStaticProps({
     locale,
     getModule,
     defaultLocale,
-    globalComponents,
+    // globalComponents,
   });
   // console.log("Agility Props", agilityProps);
 
