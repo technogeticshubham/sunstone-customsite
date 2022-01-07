@@ -1,9 +1,9 @@
-import { getPageTemplate } from "../../components/agility-pageTemplates";
+import { getPageTemplate } from "../agility-pageTemplates";
 import { handlePreview } from "@agility/nextjs";
 import { useRouter } from "next/router";
 import Error from "next/error";
-import SEO from "./SEO";
-import LoadingWidget from "./LoadingWidget";
+import SEO from "./SEO.tsx";
+import LoadingWidget from "./LoadingWidget.tsx";
 
 // set up handle preview
 const isPreview = handlePreview();

@@ -15,6 +15,14 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "pages/index.js",
+    "pages/api/preview.js",
+    "pages/_app.js",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/agility-pageTemplates/index.tsx"
+  ],
   "exclude": ["node_modules"]
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { ContentZone } from "@agility/nextjs";
-import { getModule } from "../../components/agility-pageModules";
+import { getModule } from "../agility-pageModules/index.tsx";
 
 const MainTemplate = (props) => {
   return (
